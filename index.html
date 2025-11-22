@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biss Comunicaciones</title>
+    <link rel="stylesheet" href="styles2.css">
+    <script src="https://kit.fontawesome.com/a2d04a4f39.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header>
+    <h1>Biss Comunicaciones</h1>
+    <p>Conectamos tu mundo con soluciones de confianza.</p>
+</header>
+
+<nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#info-principal">Contacto</a>
+    <a href="#facilidades">Facilidades</a>
+</nav>
+
+<section class="hero" id="inicio">
+  <a href="https://search.google.com/local/writereview?placeid=ChIJUxufIjrXT48RZpnKGXNJk0I
+  " 
+  target="_blank" 
+  class="hero-link">
+   
+   <div class="hero-tooltip">⭐ Danos tu opinión</div>
+   <img src="bisslogo.jpg" class="hero-img">
+</a>
+</section>
+
+<section class="contenedor" id="servicios">
+    <h2>Servicios</h2>
+
+    <div class="servicios">
+
+        <div class="card" onclick="openModal(1)">
+            <img src="1.png" alt="Icono de Publicidad Digital" class="service-icon">
+            <h3>Instalación de cámaras de vigilancia</h3>
+            <p>Monitorea tu hogar o negocio desde tu celular en tiempo real.</p>
+        </div>
+
+        <div class="card" onclick="openModal(2)">
+            <img src="2.jpg" alt="Icono de Diseño Gráfico" class="service-icon">
+            <h3>Proveedor de internet</h3>
+            <p>Internet de alta velocidad y conexión estable para tu casa o empresa.</p>
+        </div>
+
+        <div class="card" onclick="openModal(3)">
+            <img src="3.jpg" alt="Icono de Gestión de Redes" class="service-icon">
+            <h3>Automatización de hogares y negocios</h3>
+            <p>Modernizamos tu espacio para que funcione de manera inteligente, segura y eficiente.</p>
+        </div>
+
+        <div class="card" onclick="openModal(4)">
+            <img src="4.jpeg" alt="Icono de Fotografía Publicitaria" class="service-icon">
+            <h3>Paneles Solares y Soluciones de Energía</h3>
+            <p>Instalamos sistemas solares a medida para hogares y negocios.</p>
+        </div>
+
+        <div class="card" onclick="openModal(5)">
+            <img src="5.jpg" alt="Icono de Video Comercial" class="service-icon">
+            <h3>Soluciones de agua y sanitización para el hogar</h3>
+            <p>Automatización de tinacos y control de bombas de agua.</p>
+        </div>
+
+        <div class="card" onclick="openModal(6)">
+            <img src="6.gif" alt="Icono de Consultoría Creativa" class="service-icon">
+            <h3>Servicios Urgentes 24/7</h3>
+            <p>Atendemos emergencias en hogares y negocios cuando más lo necesitas.</p>
+        </div>
+
+        <div class="card" onclick="openModal(7)">
+            <img src="7.jpg" alt="Icono de Páginas Web" class="service-icon">
+            <h3>Sistemas de Respaldo Eléctrico</h3>
+            <p>Te protegemos contra fallas con sistemas de energía ininterrumpida.</p>
+        </div>
+
+        <div class="card" onclick="openModal(8)">
+            <img src="8.jpg" alt="Icono de Impresión Publicitaria" class="service-icon">
+            <h3>Instalación de Chapas Eléctricas y Cerraduras Inteligentes</h3>
+            <p>Hacemos tu puerta más segura y moderna con cerraduras de última generación.</p>
+        </div>
+
+    </div>
+</section>
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        
+        <div class="modal-body-content"> 
+            <div class="modal-text-content">
+                <h2 id="modalTitulo"></h2>
+                <p id="modalTexto"></p>
+            </div>
+            <img id="modalImagen" src="" alt="Imagen de Servicio" class="modal-service-image"> 
+        </div>
+    </div>
+</div>
+
+<section class="info-principal" id="info-principal">
+  <div class="contenedor info-grid-mejorado">
+
+      <!-- HORARIOS -->
+      <div class="info-box horarios-box">
+          <h2 class="info-title">Nuestros Horarios de Atención</h2>
+
+          <table class="tabla-horarios">
+              <tr>
+                  <th>Día</th>
+                  <th>Horario</th>
+              </tr>
+              <tr>
+                  <td>Domingo</td>
+                  <td class="cerrado">CERRADO</td>
+              </tr>
+              <tr>
+                  <td>Lunes a Viernes</td>
+                  <td>10:00 AM - 18:00 PM</td>
+              </tr>
+              <tr>
+                  <td>Sábado</td>
+                  <td>10:00 AM - 16:00 PM</td>
+              </tr>
+              <tr class="urgente-row">
+                  <td colspan="2">⚠ Servicios Urgentes 24HRS — ¡Disponible siempre!</td>
+              </tr>
+          </table>
+
+          <p class="nota-horarios">
+              Para servicios urgentes (24HRS) fuera del horario de oficina,<br>
+              contáctanos directamente por WhatsApp.
+          </p>
+      </div>
+
+      <!-- CONTACTO -->
+      <div class="info-box contacto-box">
+          <h2 class="info-title">CONTÁCTANOS</h2>
+
+          <div class="contact-info">
+              <p><strong>Tel:</strong> 984-157-4368</p>
+
+              <div class="contact-redes">
+                  <a href="https://wa.me/9841574368" target="_blank">
+                      <img src="w.png" class="icon-red">
+                  </a>
+                  <a href="https://www.facebook.com/share/1BTS2WvkoD/" target="_blank">
+                      <img src="f.jpg" class="icon-red">
+                  </a>
+              </div>
+          </div>
+
+          <form class="form-contacto" onsubmit="sendWhatsApp(event)">
+              <input type="text" id="nombre" placeholder="Nombre" required>
+              <input type="email" id="correo" placeholder="Correo" required>
+              <input type="text" id="asunto" placeholder="Asunto" required>
+              <textarea id="mensaje" placeholder="Mensaje" required></textarea>
+              <button type="submit">Enviar por WhatsApp</button>
+          </form>
+      </div>
+
+  </div>
+</section>
+
+
+<section class="facilidades-section" id="facilidades">
+    <div class="contenedor">
+        <h2>Facilidades</h2>
+        <div class="facilidades-grid"> 
+            <div class="facilidades-items">
+                
+                <div class="facilidad-item">
+                    <img src="RELOJ.png" alt="Disponibilidad 24 horas" class="facilidad-icon">
+                    <p>Disponibilidad las 24 horas</p>
+                </div>
+                
+                <div class="facilidad-item">
+                    <img src="STRELLA.webp" alt="Solo con cita previa" class="facilidad-icon">
+                    <p>Solo con cita previa</p>
+                </div>
+                
+                <div class="facilidad-item">
+                    <img src="TARJETA.png" alt="Pago con tarjeta" class="facilidad-icon">
+                    <p>Pago con tarjeta de débito y crédito</p>
+                </div>
+                
+            </div>
+            <div class="facilidades-imagen"> 
+                <img src="facilidades.jpg" alt="Imagen de facilidades" class="img-facilidades">
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Biss Comunicaciones</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
